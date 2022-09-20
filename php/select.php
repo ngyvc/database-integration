@@ -24,16 +24,16 @@ if ($db_connect) {
         //Prepare output
         $stmt->execute();
         $stmt->store_result();
-        $stmt->bind_result($field1, $field2, $field3, $field4); //Here put the code to setup the bind_result
+        $stmt->bind_result($id, $field1, $field2, $field3); //Here put the code to setup the bind_result
 
         //Collect results
         while($stmt->fetch()) {
             $rArray[] = [
                 // write your own output array
+                // "id" => $id,
                 // "field1" => $field1,
                 // "field2" => $field2,
                 // "field3" => $field3,
-                // "field4" => $field4,
             ];
         }
                 
