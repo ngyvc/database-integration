@@ -10,8 +10,7 @@ error_reporting(E_ALL);
 if ($db_connect) {
     //Build the SQL query
     /* ??? HERE Collect the data from the HTML form using $_REQUEST[] */
-    // Write a query to add data in your table
-    $sql = "INSERT INTO demo_table (`field1`, `field2`, `field3`) VALUES (?,?,?)";
+    $sql = "INSERT INTO demo_table (`field1`, `field2`, `field3`) VALUES (?,?,?)";    // Write a query to add data in your table
 
     //This should contain 1 when the line is inserted
     $insertedRows = 0;
